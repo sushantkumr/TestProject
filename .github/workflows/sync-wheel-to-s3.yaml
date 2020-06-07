@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       run: |
-        pip wheel requests==2.14.0 
+          pip wheel requests==2.14.0 
     - name: Upload wheel file
         uses: actions/upload-artifact@v1
         with:
