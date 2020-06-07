@@ -12,7 +12,7 @@ jobs:
           python-version: '2.7'
         run: python -m pip wheel requests==2.14.0 
       - name: Upload wheel file
-          uses: actions/upload-artifact@v1
-          with:
-            name: requests
-            path: build/
+        uses: actions/upload-artifact@v1
+        with:
+          name: requests
+          path: build/
