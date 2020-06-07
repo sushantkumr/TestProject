@@ -3,7 +3,7 @@ name: sync-wheel-to-s3
 on: push
 
 jobs:
-  create_wheel_file:
+  job_1:
     name: Create Wheel
     runs-on: ubuntu-18.04
     steps:
@@ -13,4 +13,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: requests
-          path: requests
+          path: ../build/
