@@ -7,8 +7,9 @@ jobs:
     name: Create Wheel
     runs-on: ubuntu-18.04
     steps:
-      run: |
-          pip wheel requests==2.14.0 
+      with:
+        python-version: '2.7'
+      run: python -m pip wheel requests==2.14.0 
     - name: Upload wheel file
         uses: actions/upload-artifact@v1
         with:
