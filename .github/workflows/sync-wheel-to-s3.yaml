@@ -13,4 +13,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: requests
-          path: build/wheel_files/
+          path: build/
