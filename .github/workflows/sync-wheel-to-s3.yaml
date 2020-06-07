@@ -12,5 +12,5 @@ jobs:
       - name: Upload wheel file
         uses: actions/upload-artifact@v1
         with:
-          name: requests
+          name: ../build/
           path: ../build/
